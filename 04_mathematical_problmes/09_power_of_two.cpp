@@ -1,0 +1,18 @@
+// problem link https://leetcode.com/problems/power-of-two/
+
+/*example
+16 -> 1000
+15 -> 0111
+and - 0000
+*/
+
+class Solution{
+public:
+    bool isPowerOfTwo(int n){
+
+        if(n<=0) return false;
+
+        if((n & (n-1))) return false;
+        else return true;
+    }
+}
